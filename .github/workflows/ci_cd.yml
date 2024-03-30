@@ -76,7 +76,7 @@ jobs:
         uses: docker/build-push-action@ac9327eae2b366085ac7f6a2d02df8aa8ead720a
         with:
           context: .
-          file: ../Dockerfile.prod
+          file: ./Dockerfile.prod
           push: false
           target: testing
           tags: ${{ steps.meta.outputs.tags }}
